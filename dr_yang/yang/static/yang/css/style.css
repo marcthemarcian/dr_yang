@@ -9,7 +9,10 @@
 */
 
 /* Basic */
-
+	.errorlist {
+		color: red;
+	}
+	
 	body {
 		background: #fff;
 	}
