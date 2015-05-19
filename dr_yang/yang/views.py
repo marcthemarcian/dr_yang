@@ -43,4 +43,10 @@ class ResultsView(generic.TemplateView):
     def get_context_data(self, **kwargs):
         context = super(ResultsView, self).get_context_data(**kwargs)
         context['result'] = self.request.session['result'] 
+
+
+        if context['result']:
+            context['message'] = "The patient's heart status is indicating a presence of a heart problem."            
+        else:
+            context['message'] = "The patient's heart seems to be healthy."
         return context

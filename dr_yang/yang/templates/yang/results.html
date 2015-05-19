@@ -15,7 +15,7 @@
 
     <!-- Header -->
       <header id="header">
-        <h1><strong><a href="index.html">DR</a></strong> Yang</h1>
+        <h1><strong><a href="{% url 'index' %}">DR</a></strong> Yang</h1>
         <nav id="nav">
           <ul>
             <li><a href="{% url 'index' %}">Home</a></li>
@@ -32,7 +32,7 @@
 
           <header class="major special">
             <h2>Result</h2>
-            <p>{{ result }}</p>
+            <p>{{ message }}</p>
           </header>
         </div>
       </section>

@@ -764,11 +764,13 @@
 			}
 
 /* Button */
-
+	label {
+		margin-top: 20px;
+	}
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
-	.button {
+	.button, button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-o-appearance: none;
