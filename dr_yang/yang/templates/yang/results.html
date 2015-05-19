@@ -31,14 +31,9 @@
         <div class="container">
 
           <header class="major special">
-            <h2>Heart Health Assessment</h2>
-            <p>Answer the questions as precisely as possible.</p>
+            <h2>Result</h2>
+            <p>{{ result }}</p>
           </header>
-
-          <form method='POST'> {% csrf_token %}
-            {{ form }}
-            <button type='submit'>Submit</button>
-          </form>
         </div>
       </section>
 
