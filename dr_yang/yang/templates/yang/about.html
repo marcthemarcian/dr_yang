@@ -1,0 +1,61 @@
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Dr. Yang</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="{% static 'yang/css/skel.css' %}" />
+    <link rel="stylesheet" href="{% static 'yang/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'yang/css/style-xlarge.css' %}" />
+  </head>
+  <body>
+
+    <!-- Header -->
+      <header id="header">
+        <h1><strong><a href="index.html">DR</a></strong> Yang</h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'questionnaire' %}">The Questionnaire</a></li>
+            <li><a href="{% url 'assess' %}">Assess</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- Main -->
+      <section id="main" class="wrapper">
+        <div class="container">
+
+          <header class="major special">
+            <h2>Heart Health Assessment</h2>
+            <p>Answer the questions as precisely as possible.</p>
+          </header>
+        </div>
+      </section>
+
+    <!-- Footer -->
+      <footer id="footer">
+        <div class="container">
+          <ul class="icons">
+            <li><a href="#" class="icon fa-facebook"></a></li>
+            <li><a href="#" class="icon fa-twitter"></a></li>
+            <li><a href="#" class="icon fa-instagram"></a></li>
+          </ul>
+          <ul class="copyright">
+            <li>&copy; Untitled</li>
+            <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+          </ul>
+        </div>
+      </footer>
+
+  </body>
+
+  <script src="{% static 'yang/js/jquery.min.js' %}"></script>
+  <script src="{% static 'yang/js/skel.min.js' %}"></script>
+  <script src="{% static 'yang/js/skel-layers.min.js' %}"></script>
+  <script src="{% static 'yang/js/init.js' %}"></script>
+</html>
